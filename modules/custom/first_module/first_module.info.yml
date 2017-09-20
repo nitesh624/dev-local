@@ -1,0 +1,7 @@
+name: First Module
+description: First Drupal 8 module
+package: Custom
+
+type: module
+version: 1.0
+core: 8.x

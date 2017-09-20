@@ -1,0 +1,6 @@
+first_module.admin:
+  title: 'first module settings'
+  description: 'Eg of how to make an admin settings page'
+  parent: system.admin_config_development
+  route_name: first_module.content
+  weight: 100
