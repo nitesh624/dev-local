@@ -1,0 +1,54 @@
+<div class="newsline">{{ content.field_tagline1 }}</div>
+<div class="cmsdata">
+        <div class="banner_block_01">
+                        <strong>{{ content.field_title_real }}</strong>
+                        {{ content.field_body_real }}
+        </div>
+        <div class="banner_block_02">
+                        <strong>{{ content.field_title_amazing }}</strong>
+                        {{ content.field_body_amazing }}
+        </div>
+        <div class="banner_block_03">
+                        <strong>{{ content.field_title_schedule }}</strong>
+                        {{ content.field_body_schedule }}
+        </div>
+        <div class="banner_block_04">
+                        <strong>{{ content.field_title_friends }}</strong>
+                        {{ content.field_body_friends }}
+        </div>
+        <div class="learn_more_tagline">{{ content.field_note }}
+        </div>
+        <h2 class="learner_tagline">{{ content.field_tagline2 }}</h2>
+                <div class="outer_steps">
+                        <div class="inner_steps">
+                                <ul class="how-it-works-steps">
+                                        <li>
+                                                <strong>{{ content.field_title_course }}</strong>
+                                                        {{ content.field_body_course }}
+                                        </li>
+                                        <li>
+                                                <strong>{{ content.field_title_review }}</strong>
+                                                        {{ content.field_body_review }}
+                                        </li>
+                                        <li>
+                                                <strong>{{ content.field_title_learner }}</strong>
+                                                        {{ content.field_body_learner }}
+                                        </li>
+                                        <li>
+                                                <strong>{{ content.field_title_fun }}</strong>
+                                                        {{ content.field_body_fun}}
+                                        </li>
+                            <div class="clearer"></div><!--IITBombayX-2016 Do not remove this DIV tag-->
+                                </ul>
+                        </div>
+</div>
+                <div class="submit">
+                        {% set value = content.field_button_text|render|trim %}
+            <input value="{{ value }}" onclick="location.href='/all_courses/all'" type="submit">
+
+                                                </div>
+
+                                        <div>
+
+</div>
+

@@ -1,0 +1,26 @@
+
+{% set ologo, olink, otitle = '', '', '' %}
+{% for field in fields -%}
+
+  {%- if field.wrapper_attributes.class[1] == 'views-field-field-organisation-logo' %}
+  {% set ologo =  field.content  %}
+  {%- endif %}
+
+  {%- if field.wrapper_attributes.class[1] == 'views-field-field-link' %}
+  {% set olink =  field.content  %}  
+  {%- endif %}
+
+  {%- if field.wrapper_attributes.class[1] == 'views-field-field-organisation-short-name' %}  
+  {% set otitle =  field.content  %}  
+  {%- endif %}
+
+{%- endfor %} 
+
+<li class="views-row-odd views-row-first member member-tile member-founder ">
+  <div class="member-logo">  
+            <a  target="_blank" href="{{ olink }}">
+               {{ ologo }}               
+            </a>
+   </div>
+   <div class="member-label">{{ otitle }}</div>
+</li>

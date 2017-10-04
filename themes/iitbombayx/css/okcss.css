@@ -1,0 +1,142 @@
+
+
+/* <= 320 ; > 320px ;  > 480px  ; > 768px ;  >= 960  */
+
+/* responsive header */
+
+.wrapper-container {
+   max-width: 960px !important;
+    width:100% !important;
+}
+
+.navbar-toggle {   
+    margin: 0 0 8px 0 !important; 
+    cursor: pointer;
+    margin-bottom: 4px !important;
+    background-color: #ccc;   
+}
+
+
+@media (max-width: 480px) {   
+  
+}
+
+
+@media (max-width: 830px) { 
+
+ #navbarCollapse {
+    background-color: #ededed !important;
+    width: 320px !important;
+    float: right !important;     
+ } 
+
+ header.global .nav-global li {
+    display: block !important;
+    margin-right: 10px !important;
+    border-bottom:1px solid #ccc;
+ }
+
+ header.global .nav-global {    
+    width: 100%;
+   
+ }
+
+ header.global .nav-courseware li .cta {   
+    width: 100% !important;
+ } 
+
+ header.global .nav-courseware li {
+    width: 100% !important;
+ }
+
+ header.global .nav-courseware {
+    float:left !important;
+    width: 100% !important;    
+ }
+
+.navbar-nav {
+    margin: 0 !important;
+ }
+
+.navbar-collapse {    
+    padding-bottom: 15px;
+ }
+
+@media (max-width: 960px) { 
+
+  .index-page header.global nav {
+    max-width: 100% !important;
+    padding: 18px 5px !important;
+    width:100%;
+   }    
+    
+}
+
+@media (max-width: 1200px) { 
+
+  .index-page header.global nav {
+    max-width: 100% !important;
+    padding: 18px 5px !important;
+    width:100%;
+   }   
+    
+}
+
+
+
+
+
+
+
+
+/*
+
+ body {min-width:100% !important;}
+
+    #navbarCollapse {    
+     border-right:#8a8c8f 1px solid !important;
+     border-bottom:#8a8c8f 1px solid !important;
+     border-left:#ccc 1px solid !important;
+    }
+    header.global
+
+
+   .about_page_en header.global nav, .index_page_en header.global nav {
+      width: 100%;
+    }
+
+    header.global .nav-global li {
+      display: block !important;
+    }
+
+   .wrapper-footer, .about_page_en .wrapper-footer footer {
+      min-width: 100% !important;
+      max-width:100% !important; width:100% !important; 
+    }
+
+   .index_page_en .wrapper-footer footer {
+     min-width: 100% !important;
+     max-width:100% !important; width:100% !important;
+    }
+
+   .wrapper-footer footer#footer-openedx .references { 
+    width: 100%;   
+    margin-top: 30px !important;
+    }   
+  
+    
+
+   .view-footer-text{
+    clear: both !important;
+    }
+
+    input[type="submit"], input[type="button"], button, .button {
+      box-shadow: none !important;
+      text-shadow:  none !important;
+    }
+  
+    button:hover:not(:disabled){
+        background-image: none !important;
+        background-color: none !important;
+    }
+    */

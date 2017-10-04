@@ -1,0 +1,222 @@
+/* <= 320 ; > 320px ;  > 480px  ; > 768px ;  >= 960  */
+
+/* responsive header */
+
+/*.wrapper-container {
+   max-width: 960px !important;
+   width:100% !important;
+}*/ 
+
+.navbar-toggle {   
+    margin: 0 0 8px 0 !important; 
+    cursor: pointer;
+    margin-bottom: 4px !important;
+    background-color: #ccc;   
+}
+
+.ui-dialog span,.ui-dialog select, .ui-dialog input,   {
+       word-wrap:break-word !important;
+     }
+
+     .sidemenu { display:block; }
+    .sidebar select { display:none; width:100% !important; font-size: 16px !important; background-color: #fff !important; }
+
+
+
+@media (max-width: 1200px)
+{   
+
+    header.global nav {
+     max-width: 100% !important;
+     padding: 18px 5px !important;
+     width:100% !important;
+    }   
+
+   .wrapper-footer, .window-wrap .wrapper-footer footer, body { 
+     max-width: 100% !important;
+     min-width: 100% !important;
+     width:100% !important;   
+    } 
+
+   .index-page .home>header { 
+      display:none !important;
+    }
+
+   .index-page .tagline_content {
+     width: 100% !important; 
+     padding-top: 1px !important;   
+    }
+
+   .index-page .courses-container {   
+      max-width: 100% !important;
+    }
+   .container {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+   .wrapper-container {
+        width: 100% !important;
+    }
+   .col-sm-9 {
+        width: 100% !important;
+    }
+   .inner-class {
+        width: 100% !important;
+    }
+   .col-sm-3 {
+        width: 100% !important;
+    }
+   .banner img {
+    height: auto !important;
+    width: 100% !important;
+    }
+   .banner{
+    height: auto !important;
+    width: 100% !important;
+    }
+   .ac-container {
+        width: 100% !important;
+    }
+   .content-column {
+      width: 100% !important;
+    }
+   .wrapper-inner {
+     width: 100% !important;
+    }
+
+    .sidemenu { display:none; }
+
+    .sidebar select {
+                display:block; border: 1px solid #ccc; background-color: #fff !important; }
+
+    .sidebar { 
+               padding: 23px 10px 0 10px !important;               
+               margin-bottom: 24px;                
+             }
+
+@media (max-width: 960px) {     
+.partners_page .member-tile {
+      margin-left: calc((100% - 218px * 4) / 8);
+      margin-right: calc((100% - 218px * 4) / 8);
+    }  
+}
+
+@media (max-width: 830px) {
+
+     .ui-dialog {
+       left:15px !important;
+       width:80% !important;
+       font-size: auto;
+     }
+
+
+     #navbarCollapse {
+        background-color: #ededed !important;
+        width: 320px !important;
+        float: right !important;     
+     } 
+
+     header.global .nav-global li {
+        display: block !important;
+        margin-right: 10px !important;
+        border-bottom:1px solid #ccc;
+     }
+
+     header.global .nav-global {    
+        width: 100%;   
+     }
+
+     header.global .nav-courseware li .cta {   
+        width: 100% !important;
+     } 
+
+     header.global .nav-courseware li {
+        width: 100% !important;
+     }
+
+     header.global .nav-courseware {
+        float:left !important;
+        width: 100% !important;    
+     }
+
+    .navbar-nav {
+        margin: 0 !important;
+     }
+
+    .navbar-collapse {    
+        padding-bottom: 15px;
+     }
+
+    .colophon, .references, .footer-about-openedx {
+      width: 100% !important;
+     }
+
+    .courses-listing-item {   
+      width: calc(33% - 15px) !important;      
+     }  
+    .partners_page .item-list-third li {
+      width: calc(100% / 3);
+    }
+   .partners_page .member-tile {
+    margin-left: calc((100% - 218px * 3) / 6);
+    margin-right: calc((100% - 218px * 3) / 6);
+  }
+
+}
+
+@media (max-width: 610px) {
+
+ .courses-listing-item {   
+      width: calc(48% - 15px) !important;
+      
+     }
+    
+     .ui-dialog {
+      font-size:0.9em !important;
+     }
+    .item-list-third li {
+      width: 50% !important;
+    }
+.partners_page .item-list-third li {
+    width: 100% !important;
+  }
+  .partners_page .member-tile {
+    margin-left: calc((100% - 218px * 2) / 4 );
+    margin-right: calc((100% - 218px * 2) / 4 );
+  }
+}
+
+
+@media (max-width: 540px) {
+    .courses-listing-item {   
+      width: calc(100% - 15px)  !important;     
+     }
+.partners_page .member-tile {
+    margin: 8px calc((100% - 218px) / 2 );
+  }
+      
+}
+
+@media (max-width: 460px) {   
+    .ui-dialog {
+       left:15px !important;
+       width:92% !important;
+       font-size:0.8em !important;
+     }
+
+    .item-list-third li {
+     width: 100% !important;
+     }
+
+    .courses-listing-item {   
+      width: calc(100% - 15px)  !important;     
+     }
+      
+}
+
+@media (max-width: 390px) {
+   
+      .ui-dialog {
+      font-size:0.7em !important;
+     }
+}

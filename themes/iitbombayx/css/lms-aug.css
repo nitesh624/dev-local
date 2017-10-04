@@ -1,0 +1,147 @@
+/* Custom CSS*/
+
+body{
+
+    font-size: 16px !important;
+}
+
+
+/* class used for grid coloumns should match heights for side bars*/
+.row.is-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.partners_page .container{
+	width:100% !important;	
+}
+
+.partners_page .wrapper-inner{
+	padding:0px !important;	
+}
+
+.partners_page .item-list-third li {
+	width:33% !important;
+}
+
+/* default class for faq question with right arrow  */
+.showfaqque{ 
+	margin:10px 0 !important; 
+	padding: 5px 40px 5px 40px;
+        background: url(/iitbombayx/themes/iitbombayx/images/arrow_up.png) no-repeat scroll 0px 0px;
+        background-position: left;
+        left: 0px;
+        height: auto;
+        font-size:16px;
+        cursor: pointer;
+        text-align: justify;
+}
+
+/* question text color changed on mouse over */
+.showfaqque:hover{ 
+	color:#000 !important;
+}
+
+/* class for faq answer */
+.showfaqans{ 
+	margin:10px !important; 
+	padding:10px; 
+	text-align: justify; 
+}
+
+/* class for faq question with down arrow and under line */
+.showfaqque-close{
+	margin-top:10px 0 !important; 
+	border-bottom: 1px solid #97999b; 
+	/* padding: 5px 40px 5px 40px; */
+    background: url(/iitbombayx/themes/iitbombayx/images/arrow_down.png) no-repeat scroll 0px 0px;
+    background-position: left;
+    left: 0px;
+    height: auto;
+    font-size:16px;
+    cursor: pointer;
+    text-align: justify;
+}
+
+
+
+/* How it works first part Background images */
+.banner_block_01 {
+    background: #f3f0e6 url(../images/howitworks-banner-real-classes.png) no-repeat scroll 0px 0px !important;
+    width: 24% !important;
+    font-size: 15px !important;
+}
+
+.banner_block_02 {
+    background: #f3f0e6 url(../images/howitworks-banner-amazing.png) no-repeat scroll 0px 0px !important;
+    width: 24% !important;
+    font-size: 15px !important;
+}
+
+.banner_block_03 {
+    background: #f3f0e6 url(../images/howitworks-banner-schedule.png) no-repeat scroll 0px 0px !important;
+    width: 24% !important;
+    font-size: 15px !important;
+}
+
+.banner_block_04 {
+    background: #f3f0e6 url(../images/howitworks-banner-friends.png) no-repeat scroll 0px 0px !important;
+    width: 24% !important;
+    font-size: 15px !important;
+}
+
+.banner_block_01 strong,
+.banner_block_02 strong,
+.banner_block_03 strong,
+.banner_block_04 strong {
+    color: #ec5a1a;
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.1em;
+    padding-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.inner_steps {
+    background: rgba(0, 0, 0, 0) url(../images/howitworks-footer.png) no-repeat scroll 0 0 !important;
+}
+
+.how-it-works-steps li {
+    font-size: 0.8em !important;
+    width: 220px !important;
+}
+
+.how-it-works-steps strong {
+    font-size: 12.5px !important;
+    width: 150.0px !important;
+}
+
+/* end- how it works */
+
+
+
+
+/* course list */
+
+.home .courses-container .courses .courses-listing .courses-listing-item:nth-child(4n+1) {
+    clear: none !important;
+}
+
+.home .courses-container .courses .courses-listing .courses-listing-item:last-child {
+    margin-right: 7px !important;
+}
+
+.courses-container .courses .courses-listing .courses-listing-item {
+   max-height: 400px !important;
+}
+
+
+/*faq  */
+
+.learners_faq_hi .ac-container label{ padding: 0 !important }

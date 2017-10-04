@@ -1,0 +1,596 @@
+{% if (node.field_partner_class_name.value) %}                
+
+
+<div class="{{ node.field_partner_class_name.value }}" >          
+
+  <div class="window-wrap">
+
+    <header id="global-navigation" class="global">
+         <nav class="nav-wrapper navbar"  role="navigation" aria-label="IITBombayX">
+           <div class="navbar-header">
+            <span data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                &#9776;
+            </span>
+            <h1 class="logo">
+               {{ page.headerlogo }} 
+            </h1>
+           </div>
+           <div id="navbarCollapse" class="collapse navbar-collapse">{{ page.header }} </div>
+        </header>
+
+
+    <div class="content-wrapper" id="content">
+      <div class="wrapper">
+        <div class="wrapper-inner">
+          <div class="container">
+            <div class="columns">
+              <div class="content-column">
+                <div class="content-inner">                               
+
+                  <section class="main-content">
+                  <div class="region">
+                    
+                    {{ page.counters }}
+
+                    <div class="block-views-members">
+                      <div class="view">
+                        <div class="view-content">  
+                           <ul class="member-list">
+                             {{ page.partners }}  
+                           </ul>
+                        </div>
+                        </div>
+                      <div>
+                    </div>
+
+                    </div>
+                  </div>
+                  </section>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+
+
+    <div class="wrapper wrapper-footer">
+         <footer id="footer-openedx">
+            <div class="colophon">
+               <nav class="nav-colophon">     {{ page.footer}}     </nav>
+               <div class="colophon-about" >
+                  <div>{{ page.footerlogo }}{{ page.footertext }}</div>
+               </div>
+            </div>
+            <div class="references">
+               <nav class="nav-social">
+                  <ul>
+                     <li class="nav-social-02">
+                        <a href="https://www.facebook.com/YourPlatformFacebookAccount" target="_blank" rel="external">
+                        <img src="{{ base_path ~ directory }}/images/ico-social-facebook.6757cc212a18.png" alt="IITBombayX on Facebook" />
+                        </a>
+                     </li>
+                     <li class="nav-social-03">
+                        <a href="https://twitter.com/iitbombayx"  target="_blank" rel="external">
+                        <img src="{{ base_path ~ directory }}/images/ico-social-twitter.59116eaa21b7.png" alt="IITBombayX on Twitter" />
+                        </a>
+                     </li>
+                     <li class="nav-social-04">
+                        <a href="https://plus.google.com"  target="_blank" rel="external">
+                        <img src="{{ base_path ~ directory }}/images/ico-social-google.0fcff64a115e.png" alt="IITBombayX on Google+" />
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+               {{ page.legallinks }}     
+            </div>
+            <div class="footer-about-openedx">
+               <p>
+                  <a href="www.edx.org">
+                  <img class="open-edx_logo" src="{{ base_path ~ directory }}/images/edx-openedx-logo-tag.e9c9f53905d6.png" alt="openedx" />
+                  </a>
+               </p>
+            </div>
+         </footer>
+    </div> 
+
+  </div>
+
+</div>   
+
+
+{% elseif (node.field_org_class_name.value) %}
+
+
+<div class="{{ node.field_org_class_name.value }}" >          
+
+  <div class="window-wrap">
+
+    <header id="global-navigation" class="global">
+         <nav class="nav-wrapper navbar"  role="navigation" aria-label="IITBombayX">
+           <div class="navbar-header">
+            <span data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                &#9776;
+            </span>
+            <h1 class="logo">
+               {{ page.headerlogo }} 
+            </h1>
+           </div>
+           <div id="navbarCollapse" class="collapse navbar-collapse">{{ page.header }} </div>
+        </header>
+
+
+    <div class="content-wrapper" id="content">
+
+      <div class="wrapper">
+          
+        <div class="wrapper-container">
+        <!--banner-->
+                      <div class="banner-image">
+                          <img src={{ file_url(node.field_org_banner_image.entity.fileuri)}}  />
+                      </div>
+        <!--banner closed-->
+
+        <!--University info-->
+
+          <section class="info-text">
+
+            <div class="info"> {{ page.content }} </div>
+            
+            <div class="view_content" id="dot6"> </div>                
+
+           </section>
+
+        </div>          
+      </div>      
+    </div>
+
+
+    <div class="wrapper wrapper-footer">
+         <footer id="footer-openedx">
+            <div class="colophon">
+               <nav class="nav-colophon">     {{ page.footer}}     </nav>
+               <div class="colophon-about" >
+                  <div>{{ page.footerlogo }}{{ page.footertext }}</div>
+               </div>
+            </div>
+            <div class="references">
+               <nav class="nav-social">
+                  <ul>
+                     <li class="nav-social-02">
+                        <a href="https://www.facebook.com/YourPlatformFacebookAccount" target="_blank" rel="external">
+                        <img src="{{ base_path ~ directory }}/images/ico-social-facebook.6757cc212a18.png" alt="IITBombayX on Facebook" />
+                        </a>
+                     </li>
+                     <li class="nav-social-03">
+                        <a href="https://twitter.com/iitbombayx"  target="_blank" rel="external">
+                        <img src="{{ base_path ~ directory }}/images/ico-social-twitter.59116eaa21b7.png" alt="IITBombayX on Twitter" />
+                        </a>
+                     </li>
+                     <li class="nav-social-04">
+                        <a href="https://plus.google.com"  target="_blank" rel="external">
+                        <img src="{{ base_path ~ directory }}/images/ico-social-google.0fcff64a115e.png" alt="IITBombayX on Google+" />
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+               {{ page.legallinks }}     
+            </div>
+            <div class="footer-about-openedx">
+               <p>
+                  <a href="www.edx.org">
+                  <img class="open-edx_logo" src="{{ base_path ~ directory }}/images/edx-openedx-logo-tag.e9c9f53905d6.png" alt="openedx" />
+                  </a>
+               </p>
+            </div>
+         </footer>
+    </div> 
+
+  </div>
+
+</div>  
+
+{% elseif (node.field_legal_class_name.value) %} 
+
+<div class="window-wrap {{node.field_legal_class_name.value}}" dir="ltr">
+   <div id="page">
+
+       <header id="global-navigation" class="global">
+         <nav class="nav-wrapper navbar"  role="navigation" aria-label="IITBombayX">
+           <div class="navbar-header">
+            <span data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                &#9776;
+            </span>
+            <h1 class="logo">
+               {{ page.headerlogo }} 
+            </h1>
+           </div>
+           <div id="navbarCollapse" class="collapse navbar-collapse">{{ page.header }} </div>
+        </header>
+
+      <div id="content" class="content-wrapper">        
+            
+            <div class="wrapper">              
+
+               <div class="container">
+                <div class="node-content">
+                  <div class="main-content">
+                     {{ page.content }} 
+                  </div>
+                </div>
+              </div>           
+
+            </div>         
+
+      </div>
+
+      <div class="wrapper wrapper-footer">
+         <footer id="footer-openedx">
+            <div class="colophon">
+               <nav class="nav-colophon">     {{ page.footer}}     </nav>
+               <div class="colophon-about" >
+                  <div>{{ page.footerlogo }}{{ page.footertext }}</div>
+               </div>
+            </div>
+            <div class="references">
+               <nav class="nav-social">
+                  <ul>
+                     <li class="nav-social-02">
+                        <a href="https://www.facebook.com/YourPlatformFacebookAccount" target="_blank" rel="external">
+                        <img src="{{ base_path ~ directory }}/images/ico-social-facebook.6757cc212a18.png" alt="IITBombayX on Facebook" />
+                        </a>
+                     </li>
+                     <li class="nav-social-03">
+                        <a href="https://twitter.com/iitbombayx"  target="_blank" rel="external">
+                        <img src="{{ base_path ~ directory }}/images/ico-social-twitter.59116eaa21b7.png" alt="IITBombayX on Twitter" />
+                        </a>
+                     </li>
+                     <li class="nav-social-04">
+                        <a href="https://plus.google.com"  target="_blank" rel="external">
+                        <img src="{{ base_path ~ directory }}/images/ico-social-google.0fcff64a115e.png" alt="IITBombayX on Google+" />
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+               {{ page.legallinks }}     
+            </div>
+            <div class="footer-about-openedx">
+               <p>
+                  <a href="www.edx.org">
+                  <img class="open-edx_logo" src="{{ base_path ~ directory }}/images/edx-openedx-logo-tag.e9c9f53905d6.png" alt="openedx" />
+                  </a>
+               </p>
+            </div>
+         </footer>
+      </div>
+   </div>
+</div>
+
+
+
+
+{% elseif (node.field_node_class_name.value) %}
+
+<div class="window-wrap {{node.field_node_class_name.value}}" dir="ltr">
+   <div id="page">
+
+
+
+     <header id="global-navigation" class="global">
+         <nav class="nav-wrapper navbar"  role="navigation" aria-label="IITBombayX">
+           <div class="navbar-header">
+            <span data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                &#9776;
+            </span>
+            <h1 class="logo">
+               {{ page.headerlogo }} 
+            </h1>
+           </div>
+           <div id="navbarCollapse" class="collapse navbar-collapse">{{ page.header }} </div>
+        </header>
+
+      <div id="content" class="content-wrapper">
+         <section class="container about">
+            <div class="main_content">
+               <div class="banner">                  
+                    <img src={{ file_url(node.field_banner_image.entity.fileuri)}}   />             
+
+               </div>
+            </div>
+
+
+            <div class="wrapper">              
+
+               <div class="wrapper-container">                  
+
+                      <div class="wrapper-inner">
+                         <div class="inner-class">
+                            <div class="inner-content">
+                               {{ page.sidebar_top }}
+                                <div class="row is-flex">
+
+                                  {% if node.field_show_sidebar.value %}   
+                                  <div class="col-sm-3 table_column01" >
+                                     <div class="sidebar">
+                                         {{ page.sidebar }}
+                                     </div>
+                                  </div>
+                                  {% endif %}
+
+                                  <div class="col-sm-9 table_column02">
+                                     <section class="inner-section">
+                                        {{ page.content }}
+                                          {% if ('faq' in node.field_node_class_name.value) %}
+
+                                            {% if ('learners' in node.field_node_class_name.value)  %}
+                                                {{ page.faq }}
+                                            {% else %}
+                                              {{ page.iitbxfaq }}
+                                            {% endif %}
+
+                                          {% endif %}
+                                     </section>
+                                  </div>
+
+                                </div>                    
+
+                            </div>
+                         </div>
+                      </div>
+
+               </div>              
+
+            </div>
+
+         </section>
+
+      </div>
+
+      <div class="wrapper wrapper-footer">
+         <footer id="footer-openedx">
+            <div class="colophon">
+               <nav class="nav-colophon">     {{ page.footer}}     </nav>
+               <div class="colophon-about" >
+                  <div>{{ page.footerlogo }}{{ page.footertext }}</div>
+               </div>
+            </div>
+            <div class="references">
+               <nav class="nav-social">
+                  <ul>
+                     <li class="nav-social-02">
+                        <a href="https://www.facebook.com/YourPlatformFacebookAccount" target="_blank" rel="external">
+                        <img src="{{ base_path ~ directory }}/images/ico-social-facebook.6757cc212a18.png" alt="IITBombayX on Facebook" />
+                        </a>
+                     </li>
+                     <li class="nav-social-03">
+                        <a href="https://twitter.com/iitbombayx"  target="_blank" rel="external">
+                        <img src="{{ base_path ~ directory }}/images/ico-social-twitter.59116eaa21b7.png" alt="IITBombayX on Twitter" />
+                        </a>
+                     </li>
+                     <li class="nav-social-04">
+                        <a href="https://plus.google.com"  target="_blank" rel="external">
+                        <img src="{{ base_path ~ directory }}/images/ico-social-google.0fcff64a115e.png" alt="IITBombayX on Google+" />
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+               {{ page.legallinks }}     
+            </div>
+            <div class="footer-about-openedx">
+               <p>
+                  <a href="www.edx.org">
+                  <img class="open-edx_logo" src="{{ base_path ~ directory }}/images/edx-openedx-logo-tag.e9c9f53905d6.png" alt="openedx" />
+                  </a>
+               </p>
+            </div>
+         </footer>
+      </div>
+   </div>
+</div>
+
+
+
+{% elseif (node.field_blog_class_name.value) %}
+
+<div class="window-wrap {{node.field_node_class_name.value}}" dir="ltr">
+   <div id="page">     
+      <div id="content" class="content-wrapper">         
+            <div class="main_content">
+               <div class="banner">                  
+                    <img src={{ file_url(node.field_banner_image.entity.fileuri)}}   /> 
+               </div>
+            </div>            
+           {{ page.content }}    
+      </div>     
+   </div>
+</div>
+
+{% elseif (node.field_how_it_works_class_.value) %}
+
+<div class="window-wrap {{ node.field_how_it_works_class_.value }}" dir="ltr">
+   <div id="page">
+
+
+
+      <header id="global-navigation" class="global">
+         <nav class="nav-wrapper navbar"  role="navigation" aria-label="IITBombayX">
+           <div class="navbar-header">
+            <span data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                &#9776;
+            </span>
+            <h1 class="logo">
+               {{ page.headerlogo }} 
+            </h1>
+           </div>
+           <div id="navbarCollapse" class="collapse navbar-collapse">{{ page.header }} </div>
+        </header>
+
+        
+
+      <div id="content" class="content-wrapper">
+   <div class="outer_content">
+            <div class="main_content">
+               <div class="banner">
+                  <img src={{ file_url(node.field_banner_image.entity.fileuri) }}>
+               </div>
+          <div class="container">
+      {{ page.content }}
+          </div>
+       </div>
+   </div>
+      </div>
+<div class="wrapper wrapper-footer">
+         <footer id="footer-openedx">
+            <div class="colophon">
+               <nav class="nav-colophon">     {{ page.footer}}     </nav>
+               <div class="colophon-about" >
+                  <div>{{ page.footerlogo }}{{ page.footertext }}</div>
+               </div>
+            </div>
+            <div class="references">
+               <nav class="nav-social">
+                  <ul>
+                     <li class="nav-social-02">
+                        <a href="https://www.facebook.com/YourPlatformFacebookAccount" target="_blank" rel="external">
+                        <img src="{{ base_path ~ directory }}/images/ico-social-facebook.6757cc212a18.png" alt="IITBombayX on Facebook" />
+                        </a>
+                     </li>
+                     <li class="nav-social-03">
+                        <a href="https://twitter.com/iitbombayx"  target="_blank" rel="external">
+                        <img src="{{ base_path ~ directory }}/images/ico-social-twitter.59116eaa21b7.png" alt="IITBombayX on Twitter" />
+                        </a>
+                     </li>
+                     <li class="nav-social-04">
+                        <a href="https://plus.google.com"  target="_blank" rel="external">
+                        <img src="{{ base_path ~ directory }}/images/ico-social-google.0fcff64a115e.png" alt="IITBombayX on Google+" />
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+               {{ page.legallinks }}
+            </div>
+            <div class="footer-about-openedx">
+               <p>
+                  <a href="www.edx.org">
+                  <img class="open-edx_logo" src="{{ base_path ~ directory }}/images/edx-openedx-logo-tag.e9c9f53905d6.png" alt="openedx" />
+                  </a>
+               </p>
+            </div>
+         </footer>
+      </div>
+   </div>
+</div>
+
+
+
+{% else %}
+
+
+<div class="window-wrap index-page" dir="ltr">
+   <div id="page">
+
+
+       <header id="global-navigation" class="global">
+         <nav class="nav-wrapper navbar"  role="navigation" aria-label="IITBombayX">
+           <div class="navbar-header">
+            <span data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                &#9776;
+            </span>
+            <h1 class="logo">
+               {{ page.headerlogo }} 
+            </h1>
+           </div>
+           <div id="navbarCollapse" class="collapse navbar-collapse">{{ page.header }} </div>
+        </header>
+
+
+
+      <div id="content" class="content-wrapper">        
+            
+           <section class="home">
+            <header>          
+
+            <div class="banner_text">
+              <div class="banner_inner-text">
+                <div class="banner_tagline">
+                  <p class="banner_tagline_text">{{ node.field_banner_tagline_text_one.value|raw }}</p>
+                  <p class="banner_tagline_text">{{ node.field_banner_tagline_text_two.value|raw }}</p>
+                </div>
+              </div>
+            </div>
+           </header>
+
+            <div class="tagline_container">
+              <div class="tagline_content">
+                <div class="tagline">
+                  <h2 class="tagline_text">{{ node.field_page_tagline_text.value|raw }}</h2>
+                  <p>▼</p>
+                </div>
+              </div>
+            </div>
+            
+            <section class="courses-container">
+              <section class="highlighted-courses">
+
+                    <section class="courses">                     
+                         {{ page.index_course_list }}                     
+                    </section>
+                  
+                    <div class="courses-more">
+                      <a class="courses-more-cta" href="/all_courses/all"> View all Courses </a>
+                    </div>
+
+              </section>
+            </section>
+          </section>
+          
+      </div>
+
+      <div class="wrapper wrapper-footer">
+         <footer id="footer-openedx">
+            <div class="colophon">
+               <nav class="nav-colophon">     {{ page.footer}}     </nav>
+               <div class="colophon-about" >
+                  <div>{{ page.footerlogo }}{{ page.footertext }}</div>
+               </div>
+            </div>
+            <div class="references">
+               <nav class="nav-social">
+                  <ul>
+                     <li class="nav-social-02">
+                        <a href="https://www.facebook.com/YourPlatformFacebookAccount" target="_blank" rel="external">
+                        <img src="{{ base_path ~ directory }}/images/ico-social-facebook.6757cc212a18.png" alt="IITBombayX on Facebook" />
+                        </a>
+                     </li>
+                     <li class="nav-social-03">
+                        <a href="https://twitter.com/iitbombayx"  target="_blank" rel="external">
+                        <img src="{{ base_path ~ directory }}/images/ico-social-twitter.59116eaa21b7.png" alt="IITBombayX on Twitter" />
+                        </a>
+                     </li>
+                     <li class="nav-social-04">
+                        <a href="https://plus.google.com"  target="_blank" rel="external">
+                        <img src="{{ base_path ~ directory }}/images/ico-social-google.0fcff64a115e.png" alt="IITBombayX on Google+" />
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+               {{ page.legallinks }}     
+            </div>
+            <div class="footer-about-openedx">
+               <p>
+                  <a href="www.edx.org">
+                  <img class="open-edx_logo" src="{{ base_path ~ directory }}/images/edx-openedx-logo-tag.e9c9f53905d6.png" alt="openedx" />
+                  </a>
+               </p>
+            </div>
+         </footer>
+      </div>
+   </div>
+</div>
+
+{% endif %}
+
+</section>
+{{page.content}}

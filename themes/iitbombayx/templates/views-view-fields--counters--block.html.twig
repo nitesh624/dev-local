@@ -1,0 +1,82 @@
+{% set fcount = 7 %}
+
+{% for field in fields -%}
+
+  {% set fcount = fcount -1 %}
+
+
+  {%- if field.wrapper_attributes.class[1] == 'views-field-field-faculty-count-title' %}
+            {%  set faculty_title = field.content  %}
+  {%- endif %}
+
+
+  {%- if field.wrapper_attributes.class[1] == 'views-field-field-learners-count-title' %}
+             
+            {%  set learners_title = field.content  %}         
+
+  {%- endif %}
+
+  {%- if field.wrapper_attributes.class[1] == 'views-field-field-course-count-title' %} 
+
+             {%  set course_title = field.content  %}            
+
+  {%- endif %}
+
+  {%- if field.wrapper_attributes.class[1] == 'views-field-field-faculty-count' %}
+       
+             {%  set faculty_count = field.content  %}    
+
+  {%- endif %}
+
+   
+  {%- if field.wrapper_attributes.class[1] == 'views-field-field-course-count'%}
+    
+            {%  set course_count = field.content  %}              
+    
+  {%- endif %}      
+          
+         
+  {%- if field.wrapper_attributes.class[1] == 'views-field-field-learners-count' %}
+       
+             {%  set learners_count = field.content  %}    
+  {%- endif %}
+
+
+  {%- if field.wrapper_attributes.class[1] == 'views-field-body' %}
+       
+             {%  set body_text = field.content  %}    
+  {%- endif %}
+
+
+  {% if(fcount == 0 ) %}
+
+                <div class="block">
+                  <article class="node node-page article clearfix">
+                  <div class="node-content">
+
+                  <h2 class="field-page-tagline">Partners</h2>
+
+                  <div class="field-page-body">
+
+                  <p>{{ body_text }}</p>
+
+                  <ul class="item-list-third">
+
+                  <li><p class="list-label">{{ course_count }}</p>
+                  <p>{{ course_title }}</p></li>
+
+                  <li><p class="list-label">{{ faculty_count }}</p>
+                  <p>{{ faculty_title }}</p></li>
+
+                  <li><p class="list-label">{{ learners_count }}</p>
+                  <p>{{ learners_title }}</p></li>
+                  </ul>
+                                
+                  </div>
+                  </div>
+                  </article>
+                </div>
+
+  {%- endif %}
+  
+{%- endfor %}

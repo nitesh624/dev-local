@@ -1,0 +1,137 @@
+{#
+/**
+ * @file
+ * Default view template to display all the fields in a row.
+ *
+ * Available variables:
+ * - view: The view in use.
+ * - fields: A list of fields, each one contains:
+ *   - content: The output of the field.
+ *   - raw: The raw data for the field, if it exists. This is NOT output safe.
+ *   - class: The safe class ID to use.
+ *   - handler: The Views field handler controlling this field.
+ *   - inline: Whether or not the field should be inline.
+ *   - wrapper_element: An HTML element for a wrapper.
+ *   - wrapper_attributes: List of attributes for wrapper element.
+ *   - separator: An optional separator that may appear before a field.
+ *   - label: The field's label text.
+ *   - label_element: An HTML element for a label wrapper.
+ *   - label_attributes: List of attributes for label wrapper.
+ *   - label_suffix: Colon after the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ *   - has_label_colon: A boolean indicating whether to display a colon after
+ *     the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ * - row: The raw result from the query, with all data it fetched.
+ *
+ * @see template_preprocess_views_view_fields()
+ *
+ * @ingroup themeable
+ */
+#}
+
+
+{% set fcount = 7 %}
+
+{% for field in fields -%}
+
+  {% set fcount = fcount -1 %}
+ 
+
+  {%- if field.wrapper_attributes.class[1] == 'views-field-field-course-link' %}
+            {%  set course_link = field.content  %}
+  {%- endif %}
+
+
+  {%- if field.wrapper_attributes.class[1] == 'views-field-field-field-image-link' %}
+             
+            {%  set image_link = field.content  %}         
+
+  {%- endif %}
+
+  {%- if field.wrapper_attributes.class[1] == 'views-field-field-course-code' %} 
+
+             {%  set course_code = field.content  %}
+       
+               
+
+  {%- endif %}
+
+  {%- if field.wrapper_attributes.class[1] == 'views-field-field-course-name' %}
+       
+             {%  set course_name = field.content  %}    
+
+  {%- endif %}
+
+   
+  {%- if field.wrapper_attributes.class[1] == 'views-field-field-start-date'%}
+    
+            {%  set start_date = field.content  %}              
+    
+  {%- endif %}      
+          
+         
+  {%- if field.wrapper_attributes.class[1] == 'views-field-field-organisation' %}
+       
+             {%  set organisation = field.content  %}    
+  {%- endif %}
+
+
+   {%- if field.wrapper_attributes.class[1] == 'views-field-field-new-course' %}
+       
+             {%  set new_course = field.content  %}    
+  {%- endif %}
+
+
+
+  {% if(fcount == 0 ) %}
+
+         
+             <ul class="courses-listing" >
+              <li class="courses-listing-item">
+
+               <article class="course" id="course-v1:IITBombayX+HS791xS17A+2017" role="region" aria-label="{{ course_name }}">
+                <a href="https://iitbombayx.in/courses/{{ course_link }}">
+                  <header class="course-image">
+                    <div class="cover-image">
+
+                    {% if(new_course == 'On') %}
+                        <span class="status">New</span>
+                    {%- endif %}
+
+
+                      <img src="https://iitbombayx.in{{ image_link }}" alt="{{ course_code }} - {{ course_code }}">
+                      <div class="learn-more" aria-hidden="true">LEARN MORE</div>
+                    </div>
+                  </header>
+                  <section class="course-info" aria-hidden="true">
+                    <h2 class="course-name">
+                      <span class="course-organization">{{ organisation }}</span>
+                      <span class="course-code">{{ course_code }}</span>
+                      <span class="course-title">{{ course_name }}</span>
+                    </h2>
+                    <div class="course-date" aria-hidden="true">{% trans %}Starts:{% endtrans %} {{ start_date }}</div>
+                  </section>
+                  <div class="sr">
+                    <ul>
+                    <li>{{ organisation }}</li>
+                    <li>{{ course_code }}</li>
+                    <li>Starts: <time itemprop="startDate" datetime="{{ start_date }}">{{ start_date }}</time></li>
+                  </ul>
+                  </div>
+                </a>
+              </article>
+
+              </li>
+            </ul>
+          
+
+  {% endif %}
+ 
+
+{%- endfor %}
+
+
+

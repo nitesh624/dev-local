@@ -1,22 +1,13 @@
 <?php
 namespace Drupal\Tests\Hello\Unit;
 
-use Drupal\Core\Form\FormState;
 use Drupal\Tests\UnitTestCase;
 /**
  * Tests generation of hello form.
  *
  * @group hello
  */
-class HelloFormTest extends UnitTestCase {
-
-	/**
-   * Tests the buildForm method.
-   *
-   * @covers ::testbuildForm
-   */
-    
-    
+class HelloFormTest extends UnitTestCase { 
     
     public static $modules = array('hello');
     
@@ -35,12 +26,12 @@ class HelloFormTest extends UnitTestCase {
      * Tests that the form is created.
      * TODO: block test
      */
-    public function testLoremIpsumPageExists() {
+    public function HelloPageExists() {
         // Login
         $this->drupalLogin($this->user);
         
         // Generator test:
-        $this->drupalGet('loremipsum/generate/4/20');
+        $this->drupalGet('hello');
         $this->assertResponse(200);
     }
 /* public function testBuildForm() {

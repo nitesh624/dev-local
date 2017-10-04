@@ -1,0 +1,34 @@
+#customize theme for iitbombayx migration to drupal 
+name: iitbombayx
+description: 'Customized theme for IITBombayX.'
+type: theme
+core: 8.x
+
+# Defines the base theme
+base theme: classy
+
+# Defines the package
+package: custom
+
+# Defines libraries group in which we can add css.
+libraries:
+  - iitbombayx/global-styling
+  - iitbombayx/fonts
+
+# Defines the regions for the theme
+regions:
+  headline: 'Headline'
+  header: 'Header'
+  headerlogo: 'Header Logo'
+  content: 'Content'
+  faq: 'FAQ' 
+  iitbxfaq: 'IITBx FAQ'
+  sidebar: 'Sidebar'
+  footer: 'Footer'
+  footerlogo: 'Footer Logo'
+  footertext: 'Footer Text'
+  legallinks: 'Legal Links'
+  counters: 'Counters'
+  partners: 'Partners'
+  index_course_list: 'Index Course List'
+  sidebar_top: 'Sidebar Top'

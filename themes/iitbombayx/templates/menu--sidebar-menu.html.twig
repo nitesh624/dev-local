@@ -1,0 +1,23 @@
+
+{% import _self as menus %} 
+
+{% set class = path('<current>') %}
+
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+  <ul class="sidemenu">
+    {% for item in items %}      
+          <li>
+            {% if item.in_active_trail %}     
+              {{ link(item.title, item.url, { 'class':['links-active']}) }}
+            {% else %}
+              {{ link(item.title, item.url, { 'class':['links']}) }} 
+            {% endif %}    
+          </li>               
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}

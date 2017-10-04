@@ -1,0 +1,8 @@
+<?php
+
+function iitbombayx_preprocess_html(&$variables, $hook) {  
+    $variables['base_path'] = base_path();
+    $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+    $variables['language_code'] = $language;
+}
+

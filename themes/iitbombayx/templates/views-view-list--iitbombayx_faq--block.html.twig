@@ -1,0 +1,20 @@
+	{% if attributes -%}
+	   <div {{ attributes }}>
+	{% endif %}
+
+	{% if title %}
+	    <strong>{{ title }}</strong>
+	{% endif %}
+
+    <section class="ac-container">    
+    
+	    {% for row in rows %}
+	      <div {{ row.attributes }}> {{ row.content }}</div>
+	    {% endfor %}  
+    
+    </section>
+
+	{% if attributes -%}
+	  </div>
+	{% endif %}
+
